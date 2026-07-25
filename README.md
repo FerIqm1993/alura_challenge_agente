@@ -85,8 +85,8 @@ los fragmentos. Si alguno cambia, el índice se vuelve a crear automáticamente.
 En PowerShell:
 
 ```powershell
-git clone <URL-DEL-REPOSITORIO>
-cd alura-challenge-master
+git clone git@github.com:FerIqm1993/alura_challenge_agente.git
+cd alura_challenge_agente
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
@@ -95,8 +95,8 @@ python -m pip install -r requirements.txt
 En Linux o macOS:
 
 ```bash
-git clone <URL-DEL-REPOSITORIO>
-cd alura-challenge-master
+git clone git@github.com:FerIqm1993/alura_challenge_agente.git
+cd alura_challenge_agente
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt

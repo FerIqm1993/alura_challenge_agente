@@ -1,0 +1,14 @@
+faiss-cpu>=1.8,<2
+langchain-classic>=1.0,<2
+langchain-community>=0.4,<1
+langchain-core>=1.0,<2
+langchain-groq>=1.0,<2
+langchain-huggingface>=1.0,<2
+langchain-text-splitters>=1.0,<2
+pymupdf>=1.24,<2
+python-dotenv>=1.0,<2
+sentence-transformers>=3,<6
+streamlit>=1.40,<2
+
+# Desarrollo y validación
+pytest>=8,<10

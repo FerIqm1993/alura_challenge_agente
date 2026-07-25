@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/secrets.toml
+tmp/
+pruebas/
+imgs/
+data/docs/*.pdf
+data/faiss_index/
+
+!data/docs/README.md

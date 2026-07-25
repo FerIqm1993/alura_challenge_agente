@@ -1,0 +1,16 @@
+[Unit]
+Description=Asistente de inspeccion de encamisados (Streamlit)
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/asistente-encamisados
+Environment=PORT=8501
+EnvironmentFile=/home/ubuntu/asistente-encamisados/.env
+ExecStart=/home/ubuntu/asistente-encamisados/deploy/run.sh
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

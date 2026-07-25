@@ -58,7 +58,7 @@ with st.sidebar:
         "- ¿Cómo se distingue un corto metálico de uno electrolítico en una camisa?\n"
         "- ¿Qué mediciones deben registrarse en una prueba ducto-camisa?\n"
         "- ¿Cómo interpreta NACE SP0200-2014 una camisa eléctricamente aislada?\n"
-        "- ¿Dónde debe colocarse el electrodo de referencia durante la prueba?"
+        "- ¿Dónde debe colocarse el electrodo de referencia en una prueba de encamisado?"
     )
     st.info(
         "Las respuestas sirven como apoyo documental y no sustituyen "

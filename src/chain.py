@@ -151,12 +151,13 @@ class RagAgent:
     """Coordina control de alcance, recuperación y generación sustentada."""
 
     def __init__(self, retriever=None, document_chain=None):
+        api_key = require_groq_api_key() if document_chain is None else None
         if retriever is None:
             retriever = VectorStore().retrieve()
         if document_chain is None:
             llm = ChatGroq(
                 model=GROQ_MODEL,
-                api_key=require_groq_api_key(),
+                api_key=api_key,
                 temperature=0,
                 max_retries=2,
             )

@@ -137,7 +137,7 @@ el índice existente si la huella sigue vigente.
 
 - ¿Cómo se distingue un corto metálico de un corto electrolítico en una camisa?
 - ¿Qué mediciones deben registrarse durante una prueba ducto-camisa?
-- ¿Dónde debe colocarse el electrodo de referencia durante la prueba?
+- ¿Dónde debe colocarse el electrodo de referencia en una prueba de encamisado?
 - ¿Qué respuesta de potencial indica que una camisa está eléctricamente aislada?
 - ¿Qué errores deben evitarse al comparar potenciales ducto/suelo y camisa/suelo?
 - ¿Qué pasos recomienda SP0200-2014 para evaluar una camisa en corto?
@@ -160,7 +160,8 @@ potenciales, resistencia y respuesta a la corriente aplicada.
 
 La interfaz acompaña la respuesta con las páginas recuperadas de las guías.
 
-**Pregunta:** ¿Dónde se coloca el electrodo de referencia durante la prueba?
+**Pregunta:** ¿Dónde se coloca el electrodo de referencia en una prueba de
+encamisado?
 
 **Respuesta de ejemplo:** SP0200-2014 indica posicionarlo sobre el ducto
 portador, cerca del extremo de la camisa, y no directamente sobre la camisa.

@@ -6,6 +6,23 @@ import sys
 from pathlib import Path
 
 import streamlit as st
+from streamlit.runtime.scriptrunner import get_script_run_ctx
+
+
+def _launch_with_streamlit_when_bare() -> None:
+    """Convierte ``python app.py`` en un arranque válido de Streamlit."""
+
+    if __name__ != "__main__" or get_script_run_ctx(suppress_warning=True) is not None:
+        return
+
+    from streamlit.web import cli as streamlit_cli
+
+    script_path = str(Path(__file__).resolve())
+    sys.argv = ["streamlit", "run", script_path, *sys.argv[1:]]
+    raise SystemExit(streamlit_cli.main())
+
+
+_launch_with_streamlit_when_bare()
 
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 

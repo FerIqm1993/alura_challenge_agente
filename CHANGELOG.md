@@ -12,3 +12,4 @@
 - Interfaz Streamlit con historial y visualización de fragmentos.
 - Pruebas automatizadas de alcance, ingesta, citas y huella documental.
 - Configuración segura para excluir claves y documentos licenciados de Git.
+- Arranque compatible tanto con `streamlit run app.py` como con `python app.py`.

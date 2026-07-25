@@ -129,6 +129,13 @@ reconoce `GROP_API_KEY`, pero se recomienda corregir el nombre.
 streamlit run app.py
 ```
 
+También puedes iniciarla directamente; `app.py` detectará el modo de ejecución
+y abrirá Streamlit automáticamente:
+
+```powershell
+python app.py
+```
+
 Abre `http://localhost:8501`. Durante el primer inicio se descargará el modelo
 local de embeddings y se construirá el índice; los siguientes inicios cargarán
 el índice existente si la huella sigue vigente.
@@ -205,6 +212,4 @@ Las pruebas no consumen la API de Groq. Cubren:
 
 ## Licencia del código
 
-Elige y agrega una licencia para el código antes de la publicación. Las
-licencias de los documentos fuente son independientes y no quedan transferidas
-por este proyecto.
+Elige y agrega un

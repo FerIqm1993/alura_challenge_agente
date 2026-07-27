@@ -1,17 +1,18 @@
 # Despliegue en Streamlit Community Cloud
 
-La aplicación obtiene `GROQ_API_KEY` y `GROQ_MODEL` desde variables de entorno.
-En Streamlit Community Cloud deben configurarse en **App settings > Secrets**
-como valores TOML de nivel raíz:
+La aplicación consulta primero `st.secrets` y conserva las variables de entorno
+como respaldo para desarrollo local. En Streamlit Community Cloud,
+`GROQ_API_KEY` y `GROQ_MODEL` deben configurarse en
+**App settings > Secrets** como valores TOML de nivel raíz:
 
 ```toml
 GROQ_API_KEY = "TU_CLAVE_DE_GROQ"
 GROQ_MODEL = "llama-3.3-70b-versatile"
 ```
 
-No se debe crear ni subir un archivo `.env` para el despliegue. Streamlit
-expone los secretos TOML de nivel raíz como variables de entorno, por lo que no
-es necesario cambiar el código que utiliza `os.getenv`.
+No se debe crear ni subir un archivo `.env` para el despliegue. El código lee
+los valores directamente mediante `st.secrets`; Streamlit también expone los
+secretos TOML de nivel raíz como variables de entorno.
 
 Después de guardar los secretos, espera su propagación y reinicia la
 aplicación desde Streamlit Community Cloud. Si Groq responde con

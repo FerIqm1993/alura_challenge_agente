@@ -8,6 +8,8 @@
   el desarrollo local.
 - Desactiva el observador de archivos en el despliegue para impedir que
   Streamlit fuerce imports opcionales de visión de `transformers`.
+- Lee la configuración de Groq directamente desde `st.secrets` y conserva
+  `.env` como respaldo para desarrollo local.
 
 ## 1.0.1 - 2026-07-25
 

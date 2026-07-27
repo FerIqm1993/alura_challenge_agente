@@ -212,4 +212,8 @@ Las pruebas no consumen la API de Groq. Cubren:
 
 ## Licencia del código
 
-Elige y agrega un
+MIT
+
+## Evidencias de despliegue
+<img width="1695" height="906" alt="image" src="https://github.com/user-attachments/assets/802113ec-6960-4f94-b879-a9c77e139eb0" />
+http://192.168.1.5:8501/

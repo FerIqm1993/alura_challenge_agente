@@ -1,5 +1,12 @@
 # Historial de versiones
 
+## Sin publicar
+
+- Documenta la configuración de `GROQ_API_KEY` mediante Secrets TOML de nivel
+  raíz para el despliegue en Streamlit Community Cloud.
+- Mantiene `.env.example` sin credenciales y reserva `.env` exclusivamente para
+  el desarrollo local.
+
 ## 1.0.1 - 2026-07-25
 
 - Corrige el arranque directo con `python app.py`.

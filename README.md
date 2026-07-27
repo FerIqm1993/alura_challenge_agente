@@ -30,9 +30,9 @@ La aplicación espera estos tres archivos en `data/docs/`:
 2. `Guia_estudio_pruebas_ducto_camisa_cortos_electroliticos.pdf`
 3. `SP0200-2014-Steel-Cased-Pipeline-Practices.pdf`
 
-Los PDF no se incluyen en el repositorio público. En particular,
-SP0200-2014 contiene restricciones de distribución; cada usuario debe aportar
-una copia obtenida y utilizada conforme a su licencia. Consulta
+Los PDF se incluyen en el repositorio para que el despliegue pueda construir el
+índice FAISS desde un entorno limpio. Antes de redistribuir o reutilizar estas
+fuentes, verifica las licencias aplicables. Consulta
 [`data/docs/README.md`](data/docs/README.md).
 
 ## Arquitectura
@@ -102,9 +102,9 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-### 2. Agregar las fuentes
+### 2. Verificar las fuentes
 
-Copia los tres PDF autorizados a `data/docs/` respetando exactamente los
+Confirma que los tres PDF incluidos estén presentes en `data/docs/` con los
 nombres indicados en la sección de fuentes.
 
 ### 3. Configurar Groq
@@ -196,7 +196,7 @@ Las pruebas no consumen la API de Groq. Cubren:
 ## Seguridad y buenas prácticas
 
 - Nunca escribas una clave real en `.env.example`, README, código o commits.
-- `.env`, los PDF, el índice FAISS y archivos temporales están ignorados por Git.
+- `.env`, el índice FAISS y los archivos temporales están ignorados por Git.
 - Si una clave fue compartida en texto plano, revócala y genera otra antes de
   usar el proyecto o publicarlo.
 - Revisa las respuestas y las páginas citadas antes de tomar decisiones de campo.

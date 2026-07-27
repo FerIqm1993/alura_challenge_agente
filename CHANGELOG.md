@@ -2,6 +2,8 @@
 
 ## Sin publicar
 
+- Incluye los tres PDF documentales requeridos para que Streamlit Community
+  Cloud pueda construir el índice FAISS durante el despliegue.
 - Documenta la configuración de `GROQ_API_KEY` mediante Secrets TOML de nivel
   raíz para el despliegue en Streamlit Community Cloud.
 - Mantiene `.env.example` sin credenciales y reserva `.env` exclusivamente para

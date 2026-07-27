@@ -1,3 +1,9 @@
+[server]
+# En despliegue no se necesita recarga en caliente. Desactivar el watcher evita
+# que Streamlit inspeccione imports diferidos de transformers para modelos de
+# visión que no usa este agente y que requieren torchvision de forma opcional.
+fileWatcherType = "none"
+
 [theme]
 base = "light"
 primaryColor = "#1F3B4D"

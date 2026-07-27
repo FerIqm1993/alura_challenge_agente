@@ -6,6 +6,8 @@
   raíz para el despliegue en Streamlit Community Cloud.
 - Mantiene `.env.example` sin credenciales y reserva `.env` exclusivamente para
   el desarrollo local.
+- Desactiva el observador de archivos en el despliegue para impedir que
+  Streamlit fuerce imports opcionales de visión de `transformers`.
 
 ## 1.0.1 - 2026-07-25
 

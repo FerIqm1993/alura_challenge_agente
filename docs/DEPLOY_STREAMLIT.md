@@ -17,6 +17,15 @@ Después de guardar los secretos, espera su propagación y reinicia la
 aplicación desde Streamlit Community Cloud. Si Groq responde con
 `expired_api_key`, reemplaza la clave por una nueva y vuelve a reiniciar.
 
+## Observador de archivos
+
+El despliegue usa `.streamlit/config.toml` con `fileWatcherType = "none"`.
+Community Cloud reinicia la aplicación cuando recibe cambios del repositorio,
+por lo que no necesita recarga en caliente. Esta opción también evita que el
+observador de Streamlit inspeccione procesadores de imagen opcionales de
+`transformers` y genere errores por la ausencia de `torchvision`; el agente
+utiliza únicamente embeddings de texto.
+
 ## Desarrollo local
 
 Para ejecutar la aplicación fuera de Streamlit Community Cloud, crea `.env` a

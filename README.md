@@ -216,4 +216,4 @@ MIT
 
 ## Evidencias de despliegue
 <img width="1695" height="906" alt="image" src="https://github.com/user-attachments/assets/802113ec-6960-4f94-b879-a9c77e139eb0" />
-https://alurachallengeagente-ezduzzj4zcfwan8jcyrhuw.streamlit.app/
+[https://alurachallengeagente-ezduzzj4zcfwan8jcyrhuw.streamlit.app/](https://alurachallengeagente-ezduzzj4zcfwan8jcyrhuw.streamlit.app/)
